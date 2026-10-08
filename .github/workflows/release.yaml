@@ -11,7 +11,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: migetapp/kubeoos
+  IMAGE_NAME: lyngbak-cloud/kubeoos
 
 jobs:
   build:
@@ -108,7 +108,7 @@ jobs:
 
       - name: Push Helm chart to GHCR
         run: |
-          helm push kubeoos-${{ steps.version.outputs.version }}.tgz oci://${{ env.REGISTRY }}/migetapp/kubeoos/charts
+          helm push kubeoos-${{ steps.version.outputs.version }}.tgz oci://${{ env.REGISTRY }}/lyngbak-cloud/kubeoos/charts
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2

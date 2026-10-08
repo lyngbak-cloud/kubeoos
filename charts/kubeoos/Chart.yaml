@@ -4,9 +4,9 @@ description: Kubernetes controller that adds out-of-service taint to NotReady no
 type: application
 version: 0.1.0
 appVersion: "0.1.0"
-home: https://github.com/migetapp/kubeoos
+home: https://github.com/lyngbak-cloud/kubeoos
 sources:
-  - https://github.com/migetapp/kubeoos
+  - https://github.com/lyngbak-cloud/kubeoos
 maintainers:
   - name: Krzysztof Taraszka
     email: krzysztof.taraszka@gmail.com
