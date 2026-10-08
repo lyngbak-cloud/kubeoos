@@ -48,14 +48,14 @@ Node goes NotReady
 ### Helm
 
 ```bash
-helm install kubeoos oci://ghcr.io/migetapp/kubeoos/charts/kubeoos \
+helm install kubeoos oci://ghcr.io/lyngbak-cloud/kubeoos/charts/kubeoos \
   --namespace kube-system
 ```
 
 ### Helm with custom values
 
 ```bash
-helm install kubeoos oci://ghcr.io/migetapp/kubeoos/charts/kubeoos \
+helm install kubeoos oci://ghcr.io/lyngbak-cloud/kubeoos/charts/kubeoos \
   --namespace kube-system \
   --set args.notReadyTimeout=3m \
   --set args.maxUnhealthyPercent=30
